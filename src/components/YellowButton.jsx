@@ -21,7 +21,7 @@ const theme = createTheme({
   }
 })
 
-const YellowButton = ({ children }) => {
+function YellowButton({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <Button variant="contained" color="primary">{children}</Button>

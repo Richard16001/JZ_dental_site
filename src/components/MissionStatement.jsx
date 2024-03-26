@@ -1,5 +1,5 @@
 import { Box, Typography, Container, Grid, createTheme } from '@mui/material';
-import { bannerGirl } from '../assets'
+import { dentalOfficeBG } from '../assets';
 import { Stack } from '@mui/material'
 import React from 'react'
 
@@ -15,48 +15,56 @@ const HeroTheme = createTheme({
   }
 })
 
-
-function Hero() {
+function MissionStatement() {
   return (
     <Box
       sx={{
         position: 'relative',
         display: 'flex',
-        pt: 8
+        pt: 3
       }}
     >
       {/* Banner image */}
       <Box 
         component="img" 
-        src={bannerGirl} 
-        alt={`banner girl`} 
+        src={dentalOfficeBG} 
+        alt={`dental office`} 
         sx={{ 
           maxWidth: '100%'
         }}
       />
+
       {/* Title text and button */}
       <Box
          sx={{
+          borderColor: '#000000',
+          border: 1,
+          padding: 6,
           display: 'flex',
           position: 'absolute',
           top: '60%',
-          left: '10%',
+          right: '10%',
           transform: 'translateY(-50%)',
           bgcolor: '#FFFFFF',
           color: '#4E5283',
-          maxWidth: '500px'
+          maxWidth: '400px',
          }}
       >
 
         <Stack spacing={2}>
           <Box>
-            <Typography variant="h2">
-              Build a Healthy Smile Today
+            <Typography variant="h4">
+              Mission Statement
             </Typography>
           </Box>
           <Box>
             <Typography variant="h5">
-              Zarate Studios brings you dental care that’s worth smiling about. Come visit our offices today!
+            "We want empowering individuals to achieve optimal oral health through education, prevention, and personalized care, fostering confidence and well-being in every smile."
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="subtitle1">
+              "Creating healthier, happier smiles with compassionate care."
             </Typography>
           </Box>
         </Stack>
@@ -67,4 +75,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default MissionStatement

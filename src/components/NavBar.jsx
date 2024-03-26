@@ -1,26 +1,27 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import AppBar from '@mui/material/AppBar'
+import { Box } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { ThemeProvider } from '@emotion/react';
-import YellowButton from './YellowButton';
+import CssBaseline from '@mui/material/CssBaseline'
+import Divider from '@mui/material/Divider'
+import Drawer from '@mui/material/Drawer'
+import IconButton from '@mui/material/IconButton'
+import { Link } from 'react-router-dom'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
+import MenuIcon from '@mui/icons-material/Menu'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import { ThemeProvider } from '@emotion/react'
+import YellowButton from './YellowButton'
 
 
 const drawerWidth = 240;
-const navItems = ['About us', 'Services', 'Insurance', 'Locations'];
+const navItems = ['About', 'Services', 'Insurance', 'Locations'];
 
 // const theme = createTheme({
 //   typography: {
@@ -43,15 +44,19 @@ function NavBar(props) {
   // Mobile View of Navigation Menu
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ bgcolor: '#4BC6B9', color: '#4E5283', textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, fontFamily: 'outfit', fontSize: 18 }}>
-        Denist Site
-      </Typography>
+      <Link to="/">
+        <Typography variant="h6" sx={{ my: 2, fontFamily: 'outfit', fontSize: 18 }}>
+          Denist Site
+        </Typography>
+      </Link>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center', fontFamily: 'outfit', fontSize: 18, textTransform: 'none' }}>
-              <ListItemText primary={item} />
+              <Link to={item}>
+                <ListItemText primary={item} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -64,10 +69,10 @@ function NavBar(props) {
   return (
     // This Box is responsible for the text that is displayed on screen
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       {/* This is the navbar box */}
-      <AppBar component="nav" sx={{bgcolor: '#4BC6B9'}} elevation={10}>
-        <Toolbar sx={{bgcolor: '#4BC6B9'}}>
+      <AppBar component="nav" sx={{ bgcolor: '#4BC6B9' }} elevation={10}>
+        <Toolbar sx={{ bgcolor: '#4BC6B9', justifyContent: 'space-between' }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -77,23 +82,37 @@ function NavBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, color: '#4E5283', fontFamily: 'outfit' }}
-          >
-            Denist Site
-          </Typography>
+          <Box>
+            <Link to="/">
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, color: '#4E5283', fontFamily: 'outfit' }}
+              >
+                Denist Site
+              </Typography>
+            </Link>
+          </Box>
+              
 
           {/* This box is responsible for the nav bar items */}
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: 5 }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: 1 }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#4E5283', fontFamily: 'outfit', fontSize: 18, textTransform: 'none' }}>
-                {item}
+                <Link to={item}>
+                  {item}
+                </Link> 
+                {/* {item} */}
               </Button>
             ))}
+            {/* Book Now Button */}
+              
+            <YellowButton>Book Now</YellowButton>
+            
           </Box>
-          <YellowButton>Book Now</YellowButton>
+          
+          
+
         </Toolbar>
       </AppBar>
       <nav>
