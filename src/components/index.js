@@ -1,14 +1,16 @@
 import Hero from './Hero'
-import Home from './Home'
 import MenuB from './MenuB'
+import MissionStatement from './MissionStatement'
 import NavBar from './NavBar'
+import ServiceCards from './ServiceCards'
 import YellowButton from './YellowButton'
 
 
 export {
   Hero,
-  Home,
   MenuB,
+  MissionStatement,
   NavBar,
+  ServiceCards,
   YellowButton
 }
