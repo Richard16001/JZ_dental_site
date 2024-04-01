@@ -3,7 +3,7 @@ import React from 'react'
 
 function Locations() {
   return (
-    <Box>
+    <Box sx={{pt: 20}}>
       <Typography>
         Locations
       </Typography>
