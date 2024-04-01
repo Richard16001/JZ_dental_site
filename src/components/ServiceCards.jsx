@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { Grid } from '@mui/material'
+import TealButton from './TealButton';
 
 
 import { blueCardS, purpleCardS, redCardS, whiteCardS } from '../assets';
@@ -31,8 +32,8 @@ function ServiceCards() {
     >
       <Grid container spacing={5}>
 
-        <Grid>
-          <Card>
+        <Grid item sx={12} md={6} lg={3}>
+          <Card sx={{pb: 3, pl: 2, pr: 2, pt: 6}}>
             <CardContent>
               {/* card image */}
               <Box 
@@ -40,9 +41,12 @@ function ServiceCards() {
                 src={blueCardS} 
                 alt={`blue card`} 
                 sx={{ 
-                  maxWidth: '50%',
+                  display: 'flex',
                   justifyContent: 'center',
-                  padding: 3
+                  maxHeight: '100%',
+                  maxWidth: '100%',
+                  height: 'auto',
+                  pb: 5
                 }}
               />
               <Typography variant ="h4">
@@ -51,13 +55,33 @@ function ServiceCards() {
               <Typography variant="body1">
                 Check out our Cleanings, Exams, and X-rays.
               </Typography>
+              
+              <Box sx={{justifyContent: 'center', pt: 2}}>
+                <TealButton>Learn More</TealButton>
+              </Box>
+
             </CardContent>
           </Card>
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid item sx={12} md={6} lg={3}>
           <Card>
             <CardContent>
+              {/* card image */}
+              <Box 
+                component="img" 
+                src={purpleCardS} 
+                alt={`purple card`} 
+                sx={{ 
+                  display: "flex",
+                  justifyContent: "center",
+                  maxHeight: '100%',
+                  maxWidth: '100%',
+                  height: 'auto',
+                  padding: 3
+                }}
+              />
+
               <Typography variant ="h4">
                 Cosmetic Procedures
               </Typography>
@@ -68,9 +92,25 @@ function ServiceCards() {
           </Card>
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid item sx={12} md={6} lg={3}>
           <Card>
             <CardContent>
+              
+              <Box 
+                component="img" 
+                src={redCardS} 
+                alt={`red card`} 
+                sx={{ 
+                  display: "flex",
+                  justifyContent: "center",
+                  maxHeight: '100%',
+                  maxWidth: '100%',
+                  height: 'auto',
+                  padding: 3
+                }}
+              />
+
+
               <Typography variant ="h4">
                 Surgical Procedures
               </Typography>
@@ -81,9 +121,26 @@ function ServiceCards() {
           </Card>
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid item sx={12} md={6} lg={3}>
           <Card>
             <CardContent>
+
+
+              <Box 
+                component="img" 
+                src={whiteCardS} 
+                alt={`white card`} 
+                sx={{ 
+                  display: "flex",
+                  justifyContent: "center",
+                  maxHeight: '100%',
+                  maxWidth: '100%',
+                  height: 'auto',
+                  padding: 3
+                }}
+              />
+
+
               <Typography variant ="h4">
                 Orthodontic Procedures 
               </Typography>

@@ -4,7 +4,7 @@ import React from 'react'
 
 function Insurance() {
   return (
-    <Box>
+    <Box sx={{pt: 20}}>
       <Typography>
         Insurance
       </Typography>

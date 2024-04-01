@@ -4,7 +4,7 @@ import React from 'react'
 
 function About() {
   return (
-    <Box>
+    <Box sx={{pt: 20}}>
       <Typography>
         About
       </Typography>
