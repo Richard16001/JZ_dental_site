@@ -3,7 +3,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <Box>
+    <Box sx={{pt: 20}}>
       <Typography>
         Services
       </Typography>
