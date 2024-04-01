@@ -1,4 +1,4 @@
-import bannerGirl from './BannerGirl.png'
+import bannerGirl from './bannerGirl.png'
 import blueCardS from './blueCardS.jpg'
 import dentalOfficeBG from './dentalOfficeBG.png'
 import purpleCardS from './purpleCardS.jpg'
