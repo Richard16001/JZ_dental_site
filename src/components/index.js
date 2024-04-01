@@ -9,7 +9,6 @@ import ServiceBanner1 from './ServiceBanner1'
 import Footer from './Footer'
 import TealButton from './TealButton'
 
-
 export {
   Hero,
   MenuB,
