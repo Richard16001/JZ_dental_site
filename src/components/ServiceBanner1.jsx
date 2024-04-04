@@ -15,10 +15,10 @@ function ServiceBanner1() {
           <Card>
             <CardContent>
               <Typography variant ="h4">
-              Consultation
+                Consultation
               </Typography>
               <Typography variant="body1">
-              Need help selecting our services? Schedule an in-depth consultation. 
+                Need help selecting our services? Schedule an in-depth consultation. 
               </Typography>
             </CardContent>
           </Card>
@@ -28,10 +28,10 @@ function ServiceBanner1() {
           <Card>
             <CardContent>
               <Typography variant ="h4">
-              Transparent
+                Transparent
               </Typography>
               <Typography variant="body1">
-              Trust us to provide you with fast and transparent service for reliable quotes
+                Trust us to provide you with fast and transparent service for reliable quotes
               </Typography>
             </CardContent>
           </Card>
@@ -41,10 +41,10 @@ function ServiceBanner1() {
           <Card>
             <CardContent>
               <Typography variant ="h4">
-              Modern Facilities
+                Modern Facilities
               </Typography>
               <Typography variant="body1">
-              Modern facilities that use state-of-the-art technology deliver services to smile about.
+                Modern facilities that use state-of-the-art technology deliver services to smile about.
               </Typography>
             </CardContent>
           </Card>
@@ -54,10 +54,10 @@ function ServiceBanner1() {
           <Card>
             <CardContent>
               <Typography variant ="h4">
-              Family Dentistry
+                Family Dentistry
               </Typography>
               <Typography variant="body1">
-              Welcome to our family dentistry practice, where smiles of all ages are welcome. 
+                Welcome to our family dentistry practice, where smiles of all ages are welcome. 
               </Typography>
             </CardContent>
           </Card>
