@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-
+import { InsuranceFAQ, Footer } from "../components"
 import React from 'react'
 
 function Insurance() {
@@ -8,6 +8,8 @@ function Insurance() {
       <Typography>
         Insurance
       </Typography>
+      <InsuranceFAQ />
+      <Footer />
     </Box>
   )
 }
