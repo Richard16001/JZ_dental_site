@@ -9,6 +9,7 @@ import ServiceBanner1 from './ServiceBanner1'
 import Footer from './Footer'
 import TealButton from './TealButton'
 import InsuranceFAQ from './InsuranceFAQ'
+import BulletList from './BulletList'
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   TealButton,
   Footer,
   InsuranceFAQ,
+  BulletList,
 }

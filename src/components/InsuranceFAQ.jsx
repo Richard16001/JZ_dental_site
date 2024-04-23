@@ -60,8 +60,8 @@ export default function InsuranceFAQ() {
     }}
   > 
         {/* Please rewrite FAQ Answers */}
+        <Typography variant="h3">FAQ</Typography>
         <div>
-            <Typography>FAQ</Typography>
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
             <Typography>What is PPO dental insurance?</Typography>
