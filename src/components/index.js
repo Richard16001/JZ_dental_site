@@ -8,6 +8,7 @@ import YellowButton from './YellowButton'
 import ServiceBanner1 from './ServiceBanner1'
 import Footer from './Footer'
 import TealButton from './TealButton'
+import BulletList from './BulletList'
 
 export {
   Hero,
@@ -19,5 +20,6 @@ export {
   YellowButton,
   ServiceBanner1,
   TealButton,
-  Footer
+  Footer,
+  BulletList,
 }
