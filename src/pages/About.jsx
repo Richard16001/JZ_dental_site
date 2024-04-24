@@ -1,13 +1,18 @@
 import { Box, Typography } from '@mui/material'
 
+import { AboutBanner, AboutHero, ChooseUsBanner, Footer, Reviews, StaffCards } from '../components'
+
 import React from 'react'
 
 function About() {
   return (
-    <Box sx={{pt: 20}}>
-      <Typography>
-        About
-      </Typography>
+    <Box>
+      <AboutHero />
+      <AboutBanner />
+      <StaffCards />
+      <ChooseUsBanner />
+      <Reviews />
+      <Footer />
     </Box>
   )
 }
