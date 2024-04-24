@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Grid, createTheme } from '@mui/material';
+import { Box, Typography, Container, Grid, createTheme } from '@mui/material'
 import { bannerGirl } from '../assets'
 import { Stack } from '@mui/material'
 import React from 'react'
