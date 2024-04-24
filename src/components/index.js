@@ -12,6 +12,8 @@ import AboutHero from './AboutHero'
 import AboutBanner from './AboutBanner'
 import StaffCards from './StaffCards'
 import ChooseUsBanner from './ChooseUsBanner'
+import InsuranceFAQ from './InsuranceFAQ'
+import BulletList from './BulletList'
 
 export {
   Hero,
@@ -28,4 +30,6 @@ export {
   AboutBanner,
   StaffCards,
   ChooseUsBanner
+  InsuranceFAQ,
+  BulletList,
 }
