@@ -14,6 +14,10 @@ import StaffCards from './StaffCards'
 import ChooseUsBanner from './ChooseUsBanner'
 import InsuranceFAQ from './InsuranceFAQ'
 import BulletList from './BulletList'
+import ServicesHero from './ServicesHero'
+import ServicesBanner from './ServicesBanner'
+import ServicesList from './ServicesList'
+import TESTING from './TESTING'
 
 export {
   Hero,
@@ -24,12 +28,16 @@ export {
   ServiceCards,
   YellowButton,
   ServiceBanner1,
-  TealButton,
   Footer,
+  TESTING,
   AboutHero,
   AboutBanner,
   StaffCards,
-  ChooseUsBanner
+  ChooseUsBanner,
   InsuranceFAQ,
   BulletList,
+  TealButton,
+  ServicesHero,
+  ServicesBanner,
+  ServicesList
 }

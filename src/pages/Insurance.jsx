@@ -4,10 +4,7 @@ import React from 'react'
 
 function Insurance() {
   return (
-    <Box sx={{pt: 20}}>
-      <Typography>
-        Insurance
-      </Typography>
+    <Box>
       <BulletList />
       <InsuranceFAQ />
       <Footer />

@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
-import { Hero, MissionStatement, Reviews, ServiceBanner1, ServiceCards, Footer } from "../components"
+import { Hero, MissionStatement, Reviews, ServiceBanner1, ServiceCards, Footer, TESTING } from "../components"
 
 import React from 'react'
 
@@ -12,6 +12,7 @@ function Home() {
       <ServiceCards />
       <Reviews />
       <ServiceBanner1 />
+      <TESTING />
       <Footer />
     </Box>
   )

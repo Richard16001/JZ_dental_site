@@ -24,7 +24,7 @@ const theme = createTheme({
 function YellowButton({ children }) {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="contained" color="primary">{children}</Button>
+      <Button variant="contained" color="primary" sx={{whiteSpace: 'nowrap'}}>{children}</Button>
     </ThemeProvider>
   )
 }

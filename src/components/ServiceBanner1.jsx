@@ -1,4 +1,8 @@
 import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+
+
+
 import React from 'react'
 
 function ServiceBanner1() {
@@ -6,19 +10,22 @@ function ServiceBanner1() {
     <Box
       sx={{
         position: 'relative',
-        padding: 10,
+        pt: 6,
+        pb: 6
       }}
     >
       <Box
         sx={{
-          pb: 3,
-          pl: 2,
-          pr: 2, 
-          pt: 6
+          bgcolor: '#D6E7EB',
+          padding: 10
         }}
       >
-        <Grid container spacing={5}>
-          <Grid item sx={12} md={6} lg={3}>
+        
+        <Grid container spacing={8} sx={{textAlign: 'center'}}>
+
+          
+          <Grid item xs={12} md={6} lg={3}>
+            <BookmarkIcon sx={{fontSize: 64}}/>
             <Typography variant ="h4">
               Consultation
             </Typography>
@@ -27,7 +34,8 @@ function ServiceBanner1() {
             </Typography>
           </Grid>
 
-          <Grid item sx={12} md={6} lg={3}>
+          <Grid item xs={12} md={6} lg={3}>
+            <BookmarkIcon sx={{fontSize: 64}}/>
             <Typography variant ="h4">
               Transparent
             </Typography>
@@ -36,7 +44,8 @@ function ServiceBanner1() {
             </Typography>
           </Grid>
 
-          <Grid item sx={12} md={6} lg={3}>
+          <Grid item xs={12} md={6} lg={3}>
+            <BookmarkIcon sx={{fontSize: 64}}/>
             <Typography variant ="h4">
               Modern Facilities
             </Typography>
@@ -45,7 +54,8 @@ function ServiceBanner1() {
             </Typography>
           </Grid>
 
-          <Grid item sx={12} md={6} lg={3}>
+          <Grid item xs={12} md={6} lg={3}>
+            <BookmarkIcon sx={{fontSize: 64}}/>
             <Typography variant ="h4">
               Family Dentistry
             </Typography>
@@ -56,7 +66,6 @@ function ServiceBanner1() {
 
         </Grid>
       </Box>
-
     </Box>
   )
 }
