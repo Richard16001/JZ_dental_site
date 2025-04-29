@@ -14,10 +14,12 @@ import StaffCards from './StaffCards'
 import ChooseUsBanner from './ChooseUsBanner'
 import InsuranceFAQ from './InsuranceFAQ'
 import BulletList from './BulletList'
-import ServicesHero from './ServicesHero'
+// import ServicesHero from './ServicesHero' // Removed import
 import ServicesBanner from './ServicesBanner'
 import ServicesList from './ServicesList'
 import TESTING from './TESTING'
+// import InsuranceHero from './InsuranceHero' // Removed import
+import LocationsHero from './LocationsHero' // Added import
 
 export {
   Hero,
@@ -37,7 +39,9 @@ export {
   InsuranceFAQ,
   BulletList,
   TealButton,
-  ServicesHero,
+  // ServicesHero, // Removed export
   ServicesBanner,
-  ServicesList
+  ServicesList,
+  // InsuranceHero, // Removed export
+  LocationsHero // Added export
 }

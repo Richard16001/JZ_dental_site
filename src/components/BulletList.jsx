@@ -19,28 +19,26 @@ export default function MarkerList() {
         <Typography variant="h3">
             Accepted Insurances
         </Typography>
-        <Grid container spacing = {3}>
-        <Grid xs>
-            <List sx={{ listStyleType: 'disc' , pl: 4}}>
-                <ListItem sx = {{display: 'list-item'}}> The Shawshank Redemption </ListItem>
-                <ListItem sx = {{display: 'list-item'}}>Star Wars</ListItem>
-                <ListItem sx = {{display: 'list-item'}}>The Lord of the Rings: The Two Towers</ListItem>
-            </List>
-        </Grid>
-        <Grid xs>
-            <List sx={{ listStyleType: 'disc' , pl: 4}}>
-                <ListItem sx = {{display: 'list-item'}}> The Shawshank Redemption </ListItem>
-                <ListItem sx = {{display: 'list-item'}}>Star Wars</ListItem>
-                <ListItem sx = {{display: 'list-item'}}>The Lord of the Rings: The Two Towers</ListItem>
-        </List>
-        </Grid>
-        <Grid xs>
-            <List sx={{ listStyleType: 'disc' , pl: 4}}>
-                <ListItem sx = {{display: 'list-item'}}> The Shawshank Redemption </ListItem>
-                <ListItem sx = {{display: 'list-item'}}>Star Wars</ListItem>
-                <ListItem sx = {{display: 'list-item'}}>The Lord of the Rings: The Two Towers</ListItem>
-            </List>
-        </Grid>
+        <Grid container spacing={3} sx={{ width: '100%' }}> {/* Ensure container takes full width */}
+          {[
+            ['Insurance Plan A', 'Insurance Plan B', 'Insurance Plan C'],
+            ['Insurance Plan D', 'Insurance Plan E', 'Insurance Plan F'],
+            ['Insurance Plan G', 'Insurance Plan H', 'Insurance Plan I'],
+          ].map((listItems, index) => (
+            <Grid item xs={12} sm={4} key={index}> {/* Added item prop and responsive sizing */}
+              <Card sx={{ bgcolor: '#D6E7EB', height: '100%', p: 2 }}> {/* Added Card wrapper and styling */}
+                <CardContent>
+                  <List sx={{ listStyleType: 'disc', pl: 2 }}> {/* Adjusted padding */}
+                    {listItems.map((item, itemIndex) => (
+                      <ListItem key={itemIndex} sx={{ display: 'list-item', pb: 1 }}>
+                        {item}
+                      </ListItem>
+                    ))}
+                  </List>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
         </Grid>
     </Container>
   );
